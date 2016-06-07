@@ -136,11 +136,4 @@ void sort(int massiv[], int n)
 			}
 		}
 	}
-
-	for (int i = 0; i < n; i++)
-	{
-		printf("%i ", massiv[i]);
-	}
-	printf("\nn = %i\n\n", n);
-///*///
 }
