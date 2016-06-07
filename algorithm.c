@@ -120,9 +120,9 @@ void sort(int massiv[], int n)
 			h += o[k];
 		}
 	}
+	a = 0;
 	h = 0;
 	m = - 1;
-	a = 0;
 	for(int i = 1; i <= e; i++)
 	{
 		if (i > 1) a += o[i - 1];
