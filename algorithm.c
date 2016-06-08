@@ -3,7 +3,7 @@
 
 #define ZOOM 8
 
-void sort(int massiv[], int n)
+void breaksort(int massiv[], int n)
 {
 	int a;
 	int zoom = ZOOM;
