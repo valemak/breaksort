@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdbool.h>
 
-#define ZOOM 8
+#define ZOOM 16
 
 void breaksort(int massiv[], int n)
 {
