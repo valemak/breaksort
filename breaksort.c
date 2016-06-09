@@ -1,3 +1,4 @@
+# http://vk.com/alex.tovstoles?w=note161701071_11713788
 #include <stdio.h>
 #include <stdbool.h>
 
