@@ -28,7 +28,14 @@ void breaksort(int massiv[], int n)
 		massiv[i - 1] -= massiv[0];
 	}
 	massiv[n - 1] -= massiv[0];
-	if (massiv[n - 1] == 0) return;
+	if (massiv[n - 1] == 0)
+	{
+		for (int i = 1; i < n; i++)
+		{
+			massiv[i] = massiv[0];
+		}
+		return;
+	}
 	int b = massiv[n - 1] / zoom;
 	bool c[2 + b];
 	for (int i = 0; i < b; i++){c[i] = 0;}
