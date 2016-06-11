@@ -13,7 +13,7 @@ void breaksort(int massiv[], int n)
 		if (massiv[i] < massiv[i - 1])
 		{
 			a = massiv[i];
-			massiv[i] = massiv[i - 1];
+/* 1 x N */		massiv[i] = massiv[i - 1];
 			massiv[i - 1] = a;
 		}
 	}
@@ -22,7 +22,7 @@ void breaksort(int massiv[], int n)
 		if (massiv[i] < massiv[i - 1])
 		{
 			a = massiv[i];
-			massiv[i] = massiv[i - 1];
+/* 1 x N */		massiv[i] = massiv[i - 1];
 			massiv[i - 1] = a;
 		}
 		massiv[i - 1] -= massiv[0];
@@ -36,12 +36,13 @@ void breaksort(int massiv[], int n)
 	for (int i = 1; i < n; i++)
 	{
 		int d = 1 + massiv[i] / zoom;
+/* 1 x MAX / zoom */
 		if (c[d] == 0) c[d] = 1;
 	}
 	int e = 0;
 	for (int i = 1, z = b + 1; i < z; i++)
 	{
-		if (c[i] == 0 && c[i - 1] == 1) e++;
+/* 1 x N */	if (c[i] == 0 && c[i - 1] == 1) e++;
 	}
 	e++;
 	int f[e + 1];
@@ -57,6 +58,7 @@ void breaksort(int massiv[], int n)
 		if (c[i] == 0 && c[i - 1] == 1)
 		{
 			f[h] = i - 2;
+/* 1 x MAX / zoom */
 			h++;
 		}
 	}
@@ -66,6 +68,7 @@ void breaksort(int massiv[], int n)
 		if (c[i] == 1 && c[i - 1] == 0)
 		{
 			g[h] = i;
+/* 1 x MAX / zoom */
 			h++;
 		}
 	}
