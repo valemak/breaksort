@@ -1,4 +1,3 @@
-# http://vk.com/alex.tovstoles?w=note161701071_11713788
 #include <stdio.h>
 #include <stdbool.h>
 
@@ -38,7 +37,7 @@ void breaksort(int massiv[], int n)
 	}
 	int b = massiv[n - 1] / zoom;
 	bool c[2 + b];
-	for (int i = 0; i < 2 + b; i++){c[i] = 0;}
+//	for (int i = 0; i < 2 + b; i++){c[i] = 0;}
 	c[0] = 1;
 	c[1] = 1;
 	for (int i = 1; i < n; i++)
@@ -55,11 +54,11 @@ void breaksort(int massiv[], int n)
 	}
 	e++;
 	int f[e + 1];
-	for (int i = 0; i < e; i++){f[i] = 0;}
+//	for (int i = 0; i < e; i++){f[i] = 0;}
 	f[0] = zoom;
 	f[e] = b;
 	int g[e];
-	for (int i = 0; i < e; i++){g[i] = 0;}
+//	for (int i = 0; i < e; i++){g[i] = 0;}
 	int h = 1;
 	int m = 1 + b;
 	for (int i = 1; i <= m; i++)
@@ -117,7 +116,7 @@ void breaksort(int massiv[], int n)
 		o[0] += o[i];
 	}
 	int q[o[0] + 1];
-	for (int i = 0, z = o[0] + 1; i < z; i++){q[i] = 0;}
+//	for (int i = 0, z = o[0] + 1; i < z; i++){q[i] = 0;}
 	q[1] = 1;
 	for(int i = 1; i < n; i++)
 	{
