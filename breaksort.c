@@ -6,7 +6,7 @@
 
 void breaksort(int massiv[], int n)
 {
-	int a;
+	int a; 
 	int zoom = ZOOM;
 	for (int i = n - 1; i > 0; i--)
 	{
